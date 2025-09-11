@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background-color: #1E1E2E; 
+    color: #E5E7EB; 
+    min-height: 100vh;
+  }
+
+  .container {
+    max-width: 900px;
+    margin: 32px auto;
+    padding: 0 32px;
+    background-color: #1E1E2E; 
+    padding: 0.7rem 1.2rem;
+    border-radius: 0.5rem;
+  }
+  
+  .navbar {
+    background-color: #111827;
+    padding: 16px;
+    text-align: center;
+    border-bottom: 1px solid #2D2D3A;
+  }
+  
+  .navbar h1 {
+    color: #FFFFFF;
+    font-size: 24px;
+  }
+  
+  #task-form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 32px;
+    gap: 16px;
+  }
+  
+  #task-input {
+    flex: 1;
+    padding: 0.7rem 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    /* outline: none; */
+    background-color: #2A2A3D;
+    color: #E5E7EB;
+  }
+  
+  #add-btn {
+    background-color: #3B82F6;
+    border: none;
+    color: white;
+    padding: 0.7rem 1.2rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  
+  #add-btn:hover {
+    background-color: #2563EB;
+  }
+  
+  .tasks {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    /* margin-left: 20rem; */
+    /* background-color: #2D2D3A;
+    padding: 0.7rem 1.2rem;
+    border-radius: 0.5rem; */
+  }
+
+  .todo {
+    background-color: #2D2D3A;
+    padding: 0.7rem 1.2rem;
+    border-radius: 0.5rem;
+  }
+
+  .completed {
+    background-color: #2D2D3A;
+    padding: 0.7rem 1.2rem;
+    border-radius: 0.5rem;
+  }
+  
+  .tasks h2 {
+    margin-bottom: 1rem;
+    color: #FFFFFF;
+    font-size: 1.2rem;
+    border-bottom: 2px solid #3B82F6;
+    padding-bottom: 0.5rem;
+  }
+  
+  .tasks ul {
+    list-style: none;
+  }
+  
+  .tasks li {
+    background-color: #1d1d2e;
+    padding: 0.8rem 1rem;
+    margin-bottom: 0.8rem;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #E5E7EB;
+  }
+  
+  .completed li {
+    background-color: #18212e;
+    /* text-decoration: line-through; */
+    color: #9CA3AF;
+  }
+  .actions button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 0.5rem;
+    font-size: 1rem;
+    color: #9CA3AF;
+    transition: color 0.2s;
+  }
+  
+  .actions button:hover {
+    color: #3B82F6; 
+  }
+  
