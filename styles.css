@@ -126,4 +126,22 @@
   .actions button:hover {
     color: #3B82F6; 
   }
-  
+
+  @media (max-width: 600px) {
+  .tasks {
+    grid-template-columns: 1fr; /* stack columns */
+  }
+  .navbar h1 {
+    font-size: 1.4rem;
+  }
+  .tasks h1 {
+    font-size: 1.2rem;
+  }
+  .container form {
+    flex-direction: column;
+  }
+  .container input[type="text"],
+  .container input[type="submit"] {
+    width: 100%;
+  }
+}
